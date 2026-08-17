@@ -11,38 +11,77 @@
             box-sizing: border-box;
         }
 
+        html,
         body {
             margin: 0;
+            min-height: 100%;
+        }
+
+        body {
             min-height: 100vh;
 
             display: flex;
             justify-content: center;
-            align-items: center;
 
-            background: #0b0b0b;
-            color: #eeeeee;
+            background: #050505;
+            color: #ffffff;
 
-            font-family: Arial, sans-serif;
-            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
         }
 
         .container {
-            padding: 40px;
+            width: 100%;
+            max-width: 700px;
+
+            padding: 80px 30px;
+
+            text-align: center;
         }
 
-        h1 {
-            margin: 0;
-            font-size: clamp(3rem, 10vw, 7rem);
-            letter-spacing: 0.15em;
-            text-transform: uppercase;
+        .logo {
+            width: min(500px, 90%);
+            height: auto;
+
+            margin-bottom: 25px;
         }
 
-        p {
-            margin-top: 25px;
-            font-size: 1.2rem;
-            color: #999;
-            letter-spacing: 0.2em;
+        .alien {
+            font-size: 2rem;
+            margin-bottom: 15px;
+        }
+
+        .construction {
+            margin: 0 0 70px;
+
+            font-size: 0.8rem;
+            letter-spacing: 0.35em;
             text-transform: uppercase;
+
+            color: #888;
+        }
+
+        .photo {
+            width: min(450px, 90%);
+
+            display: block;
+            margin: 0 auto 35px;
+
+            border-radius: 2px;
+        }
+
+        .instagram {
+            color: #ffffff;
+            text-decoration: none;
+
+            font-size: 0.85rem;
+            letter-spacing: 0.25em;
+            text-transform: uppercase;
+
+            transition: opacity 0.2s ease;
+        }
+
+        .instagram:hover {
+            opacity: 0.5;
         }
     </style>
 </head>
@@ -50,8 +89,39 @@
 <body>
 
     <main class="container">
-        <h1>Dan3rdeye</h1>
-        <p>Coming Soon</p>
+
+        <!-- Dan3rdeye logo -->
+        <img
+            class="logo"
+            src="images/hardEdgeLogo.PNG"
+            alt="Dan3rdeye"
+        >
+
+        <!-- Alien -->
+        <div class="alien">👽</div>
+
+        <!-- Under construction -->
+        <p class="construction">
+            Under Construction
+        </p>
+
+        <!-- Photo -->
+        <img
+            class="photo"
+            src="images/dan.jpg"
+            alt="Dan3rdeye"
+        >
+
+        <!-- Instagram -->
+        <a
+            class="instagram"
+            href="https://www.instagram.com/dan3rdeye/"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            Instagram
+        </a>
+
     </main>
 
 </body>
